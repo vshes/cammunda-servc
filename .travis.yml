@@ -10,6 +10,7 @@ services:
  - docker
 
 before_install:
+ - gradle -v
  - gradle wrapper --gradle-version 5.0
  - gradle -v
  - gradle assemble
