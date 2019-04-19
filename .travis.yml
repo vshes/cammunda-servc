@@ -10,9 +10,11 @@ services:
  - docker
 
 before_install:
+ - gradle wrapper --gradle-version 5.0
+ - gradle -v
  - gradle assemble
  - docker build -t shesh-repo/camunda-serv .
 
 script:
  - docker run shesh-repo/cammunda-serv
-
+git commit -m "
