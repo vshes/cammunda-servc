@@ -1,0 +1,18 @@
+sudo: required
+language: java
+install: true
+
+jdk:
+  - oraclejdk8
+  - openjdk8
+
+services:
+ - docker
+
+before_install:
+ - gradle assemble
+ - docker build -t shesh-repo/camunda-serv .
+
+script:
+ - docker run shesh-repo/cammunda-serv
+
