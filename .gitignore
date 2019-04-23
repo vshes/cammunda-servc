@@ -1,0 +1,12 @@
+!/src
+!build.gradle
+! .gitignore
+!Dockerfile
+!settings.gradle
+!.travis.yml
+!gradlew
+/.gradle
+.idea
+/build
+/gradle
+! gradlew.bat
